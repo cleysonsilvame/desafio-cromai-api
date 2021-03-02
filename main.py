@@ -12,8 +12,8 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 parser = reqparse.RequestParser()
 
 
-@cross_origin()
 class Pitagoras(Resource):
+    @cross_origin()
     def post(self):
         parser.add_argument('opposite_side')
         parser.add_argument('adjacent_side')
