@@ -1,16 +1,18 @@
 from flask import Flask
 from flask_restful import Api, Resource, reqparse
 from math import hypot
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 
 
 # app = Flask("Desafio Cromai | Pitágoras")
 app = Flask(__name__)
 api = Api(app)
-CORS(app)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 parser = reqparse.RequestParser()
 
 
+@cross_origin()
 class Pitagoras(Resource):
     def post(self):
         parser.add_argument('opposite_side')
