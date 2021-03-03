@@ -33,9 +33,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ### Desafio proposto pela empresa Cromai
 
-A missão era desenvolver um projeto em React que fosse capaz de resolver o cálculo do Teorema de Pitágoras.
-Conectado a uma API em Python com Flask para servir o cálculo.
-Como extra, criar um fork em Electron.
+A missão era desenvolver uma API simples com Flask que fosse capaz de resolver o cálculo do Teorema de Pitágoras.
+Servindo front-end em [React](https://github.com/cleysonsilvame/desafio-cromai) e [Electron](https://github.com/cleysonsilvame/desafio-cromai-electron).
 
 ## ⚙️ Requisitos da aplicação
 
